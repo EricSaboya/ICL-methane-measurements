@@ -12,6 +12,7 @@ A substantial amount of measurement and simulation data are used in this researc
 Additional data (e.g. NAME back-trajectories) can be provided upon request.
 
 ### Python requirements
-See requirements.txt for full list of Python requirements
+ee requirements.txt for Python 3 requirements. 
+These can be installed in a new venv using  ```pip3 install -r requirements.txt```
 
 ### Scripts
