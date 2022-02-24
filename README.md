@@ -1,6 +1,7 @@
 # chapter3-LondonMethane
-Author: Eric Saboya, Dept. of Physics, Imperial College London
-Contact: ericsaboya54[at]gmail.com
+**Author**: Eric Saboya, Dept. of Physics, Imperial College London
+
+**Contact**: ericsaboya54[at]gmail.com
 
 ## About
 This repository contains the Python3 scripts used for the third chapter of my PhD thesis: ``Measurements and Modelling of CH4 concentrations and carbon-13 in London'', which also forms part of the publication Saboya et al. (2022), ACP, ``Continuous CH4 and d13CH4 measurements in London demonstrate under-reported natural gas leakage''
