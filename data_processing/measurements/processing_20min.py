@@ -114,8 +114,8 @@ def processing_icl_measurements(gcwerks_datapath, met_datapath):
             wind_speed_20m.append(np.nan)
             wind_direction_20m.append(np.nan)
         else:
-            wind_speed_20m.append(wind_speed[ind[0]])
-            wind_direction_20m.append(wind_direction[ind[0]])
+            wind_speed_20m.append(wind_speed[met_ind[0]])
+            wind_direction_20m.append(wind_direction[met_ind[0]])
    
 #     Add met data to ch4_dict
     ch4_dict['wind_speed']=np.array(wind_speed_20m)
