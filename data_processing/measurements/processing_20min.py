@@ -16,6 +16,9 @@ import sys
 import numpy as np 
 import datetime as dt
 
+sys.path.append('//')
+import utils
+
 def processing_icl_measurements(gcwerks_datapath, met_datapath):
     """ Processing GCWerks and ClimeMet output
     inputs:
@@ -106,7 +109,7 @@ def processing_icl_measurements(gcwerks_datapath, met_datapath):
     wind_speed_20m, wind_direction_20m=[],[]
     for i in range(len(t)):
         ch4_date = t[i]
-        met_ind=nearest_ind(t_met_stamp,ch4_date)
+        met_ind=utils.nearest_ind(t_met_stamp,ch4_date)
         if len(met_ind)==0:
             wind_speed_20m.append(np.nan)
             wind_direction_20m.append(np.nan)
