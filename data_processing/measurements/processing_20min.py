@@ -13,6 +13,7 @@
 
 import os 
 import sys
+import pickle
 import numpy as np 
 import datetime as dt
 
@@ -124,5 +125,15 @@ def processing_icl_measurements(gcwerks_datapath, met_datapath):
     return ch4_dict
     
             
-        
-       
+def main():
+#     Data paths
+    picarro_data="//Volumes/HardDrive/PhD/disk1/data/Picarro/IMP_26magl/GCwerks/20min_record.txt"
+    met_data="//Volumes/LaCie/CHAPTER1/Data/Observations/ICL_MET/RAW_COMPLETE.txt"
+#     Create dictionary
+    ch4_dict=processing_icl_measurements(picarro_data, met_data)
+#     Save dictionary
+    with open('icl_ch4_met.pickle','wb') as handle:
+        pickle.dump(ch4_dict, handle,protocol=pickle.HIGHEST_PROTOCOL)
+
+if __name__=="__main__":
+    main()
